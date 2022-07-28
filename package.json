@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://YK911.github.io/bcon-parcel-test",
+  "homepage": "https://Lluppiter.github.io/hot-chilli-developers-HellEn",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /bcon-parcel-test/"
+    "build": "parcel build src/*.html --public-url /hot-chilli-developers-HellEn/"
   },
   "repository": {
     "type": "git",
