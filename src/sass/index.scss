@@ -1,11 +1,14 @@
-@import './example';
 /* utils */
 @import './utils/varialbles';
 @import './utils/common';
+@import './utils/mixin';
 /* base */
 @import './base/reset';
 @import './base/typography';
 /* components */
+@import './components/sections';
+@import './components/container.scss';
+@import './components/button';
 /* layout */
 @import './layouts/header';
 @import './layouts/hero';
@@ -19,4 +22,3 @@
 @import './layouts/reviews';
 @import './layouts/contacts';
 @import './layouts/footer';
-
