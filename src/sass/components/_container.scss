@@ -3,6 +3,7 @@
   max-width: 480px;
 
   padding: 0 20px;
+  margin: 0 auto;
 
   @include mq(tab) {
     width: 768px;
