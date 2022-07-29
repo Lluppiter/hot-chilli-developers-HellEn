@@ -27,7 +27,7 @@
   font-size: 26px;
   font-weight: 800;
   line-height: calc(31.7/26);
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
   color:var(--primary-text-color);
   letter-spacing: 0.04em;
@@ -37,9 +37,13 @@
     font-weight: 700;
     line-height: calc(9.75/8);
     letter-spacing: 0.18em;
+    text-transform: uppercase;
   }
   &--span {
     color:var(--accent--color)
+  }
+  &--b {
+    text-transform: uppercase;
   }
 
 }
