@@ -1,1 +1,18 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 
+  color: var(--primary-text-color);
+
+  @include text(700, 5px, 1.2, 0.18em, none, uppercase);
+
+  &--or {
+    color: var(--accent--color);
+  }
+
+  &--footer {
+    max-width: 80px;
+    margin: 0 auto;
+  }
+}
