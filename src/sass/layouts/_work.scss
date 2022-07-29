@@ -1,33 +1,44 @@
 .work {
   text-align: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  display: flex;
 }
 .work__title--head {
   text-align: center;
   margin-bottom: 60px;
 }
 .work__title {
+  margin-top: 20px;
   margin-bottom: 20px;
   @include text(700, 14px, 1.42, 0.08em, center, false);
+  .work__list:hover & {
+    color: var(--accent--wht--color);
+  }
 }
 .work__pretitle {
   color: var(--second-text-colot);
   position: relative;
   @include text(500, 12px, 1.67, 0.08em, center, false);
 
-  &:hover,
-  &:focus {
+  .work__list:hover & {
     color: var(--accent--wht--color);
   }
 }
 
 .work__pretitle::before {
   content: '';
-  display: inline-block;
-  position: absolute;
+  display: block;
+  margin-bottom: 20px;
+
+  left: 50%;
   width: 20px;
   height: 2px;
   background: var(--accent--color);
   border-radius: 2px;
+  .work__list:hover & {
+    color: var(--accent--wht--color);
+  }
 }
 .tumb__text {
   padding: 0px 20px 0px;
@@ -38,41 +49,31 @@
 .work__list {
   margin-left: auto;
   margin-right: auto;
+  padding: 30px 20px;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
   @include mq(mob) {
     max-width: 280px;
   }
-  &:not(:last-child) {
-    @include mq(mob-only) {
-      margin-bottom: 15px;
-    }
-  }
+
   @include mq(tab) {
     max-width: 334px;
   }
   @include mq(desk) {
     max-width: 480px;
   }
-}
-.work__tumb {
-  padding-top: 30px;
-  padding-bottom: 30px;
   &:hover,
   &:focus {
-    color: var(--accent--wht--color);
     background-color: var(--accent--color);
   }
 }
 
 .work__icon {
-  margin-bottom: 28px;
   fill: var(--accent--color);
-  &:hover,
-  &:focus {
-    fill: var(--accent--wht--color);
-  }
   @include mq(mobile) {
     margin-bottom: 20px;
+  }
+  .work__list:hover & {
+    fill: var(--accent--wht--color);
   }
 }
