@@ -1,8 +1,13 @@
 .button {
-  width: 354px;
-  height: 70px;
+  width: 260px;
+  height: 480px;
 
   border: 2px solid var(--accent--color);
 
   background-color: transparent;
+
+  @include mq(desk) {
+    width: 254px;
+    height: 70px;
+  }
 }
