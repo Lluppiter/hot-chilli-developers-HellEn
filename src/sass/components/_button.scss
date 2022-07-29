@@ -5,9 +5,4 @@
   border: 2px solid var(--accent--color);
 
   background-color: transparent;
-
-  @include mq(desk) {
-    width: 254px;
-    height: 70px;
-  }
 }
