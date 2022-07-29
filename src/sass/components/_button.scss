@@ -4,20 +4,11 @@
   padding-top: 14px;
   padding-bottom: 14px;
 
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: center;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-
-  border: 2px solid var(--accent--color);
-
   background-color: var(--accent--color);
-
   cursor: pointer;
+
+  @include text(700, 12, 1.25, 0.08em, center, uppercase);
+  border: 2px solid var(--accent--color);
 
   @include mq(desk) {
     width: 354px;
@@ -25,8 +16,23 @@
     padding-top: 27px;
     padding-bottom: 26px;
 
-    font-size: 14px;
-    line-height: 1.21px;
-    letter-spacing: 0.14em;
+    @include text(700, 14, 1.21, 0.14em, center, uppercase);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent--wht--color);
+    color: var(--accent--color);
+  }
+
+  &--header {
+    background-color: transparent;
+    color: var(--accent--color);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent--color);
+      color: var(--accent--wht--color);
+    }
   }
 }

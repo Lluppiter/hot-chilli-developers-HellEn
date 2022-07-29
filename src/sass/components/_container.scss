@@ -6,11 +6,13 @@
   margin: 0 auto;
 
   @include mq(tab) {
-    width: 768px;
-    max-width: 768px;
+    max-width: 728px;
+
+    padding: 0 40px;
   }
   @include mq(desk) {
-    width: 1366px;
     max-width: 1366px;
+
+    padding: 0 26px;
   }
 }
