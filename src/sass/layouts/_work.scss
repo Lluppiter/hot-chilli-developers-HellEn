@@ -3,10 +3,26 @@
   flex-wrap: wrap;
   gap: 15px;
   display: flex;
+  @include mq(tab) {
+    gap: 20px;
+  }
+  @include mq(desk) {
+    gap: 30px;
+  }
 }
 .work__title--head {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  @include text(800, 20px, 1.3, 0.03em, center, false);
+  @include mq(tab) {
+    font-weight: 800;
+    font-size: 26px;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 47px;
+    text-align: left;
+  }
 }
 .work__title {
   margin-top: 20px;
@@ -15,10 +31,13 @@
   .work__list:hover & {
     color: var(--accent--wht--color);
   }
+  @include mq(tab) {
+    margin-top: 32px;
+  }
 }
+
 .work__pretitle {
   color: var(--second-text-colot);
-  position: relative;
   @include text(500, 12px, 1.67, 0.08em, center, false);
 
   .work__list:hover & {
@@ -28,7 +47,7 @@
 
 .work__pretitle::before {
   content: '';
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 
   left: 50%;
@@ -41,20 +60,21 @@
   }
 }
 .work__list {
-  margin-left: auto;
-  margin-right: auto;
   padding: 30px 20px;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
   @include mq(mob) {
-    max-width: 280px;
+    &:hover,
+    &:focus {
+      background-color: var(--accent--color);
+    }
   }
-
   @include mq(tab) {
-    max-width: 334px;
+    flex-basis: calc(50% - 10px);
   }
   @include mq(desk) {
-    max-width: 480px;
+    flex-basis: calc(33.33% - 20px);
+    padding: 35px 28px;
   }
   &:hover,
   &:focus {
