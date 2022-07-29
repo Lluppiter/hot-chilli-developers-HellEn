@@ -33,6 +33,10 @@
   @include mq(tab) {
     margin-top: 32px;
   }
+  @include mq(desk) {
+    margin-top: 28px;
+    margin-bottom: 15px;
+  }
 }
 
 .work__pretitle {
@@ -57,6 +61,9 @@
   border-radius: 2px;
   .work__list:hover & {
     background: var(--accent--wht--color);
+  }
+  @include mq(desk) {
+    margin-bottom: 15px;
   }
 }
 .work__list {
