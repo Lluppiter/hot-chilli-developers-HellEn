@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* utils */
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  /* змінні кольорів */
+  --primary-text-color: #111518;
+  --second-text-colot: #b9b9b9;
+  --third-text-color: #3d3d3d;
+  --primary-title-color: 111518;
+  --accent--color: #ff6b09;
+  --accent--wht--color: #ffffff;
+  --background-color: #111518;
+  --second-background-color: #f1f1f1;
+}
+
+/* base */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+}
+
+.body {
+  font-family: roboto, sans-serif;
+}
+
+/* components */
+.section {
+  padding: 130px 0;
+}
+
+.container {
+  width: 1366px;
+  padding: 0 26px;
+}
+
+.button {
+  width: 354px;
+  height: 70px;
+  border: 2px solid var(--accent--color);
+  background-color: transparent;
+}
+
+/* layout */
+.header__container {
+  width: 1316px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.spacial {
+  margin-right: 30px;
+}/*# sourceMappingURL=index.css.map */
