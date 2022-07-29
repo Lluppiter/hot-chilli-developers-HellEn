@@ -14,4 +14,11 @@
     @include text(500, 14px, 2, 0.08em, center, none);
     color: var(--second-text-colot);
   }
+
+  @include mq(tab) {
+    flex-direction: row;
+    &__text {
+      text-align: start;
+    }
+  }
 }
