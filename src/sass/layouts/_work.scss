@@ -11,7 +11,6 @@
   }
 }
 .work__title--head {
-  text-align: center;
   margin-bottom: 30px;
   @include text(800, 20px, 1.3, 0.03em, center, false);
   @include mq(tab) {
@@ -47,16 +46,17 @@
 
 .work__pretitle::before {
   content: '';
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
 
-  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
   width: 20px;
   height: 2px;
   background: var(--accent--color);
   border-radius: 2px;
   .work__list:hover & {
-    color: var(--accent--wht--color);
+    background: var(--accent--wht--color);
   }
 }
 .work__list {
