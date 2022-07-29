@@ -1,0 +1,17 @@
+.header__container{
+  width: 1316px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__item:not(:nth-child(-n+3)) {
+  margin-right: 30px;
+}
