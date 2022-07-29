@@ -1,5 +1,13 @@
 .container {
-  width: 480px;
+  min-width: 320px;
+  max-width: 480px;
 
   padding: 0 20px;
+
+  @include mq(tab) {
+    width: 768px;
+  }
+  @include mq(desk) {
+    width: 1366px;
+  }
 }
