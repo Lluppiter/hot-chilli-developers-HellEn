@@ -1,0 +1,55 @@
+.work {
+  text-align: center;
+}
+.work__title--head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.work__title {
+  position: relative;
+}
+.work__pretitle::before {
+  content: '';
+  position: absolute;
+
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: var(--accent--color);
+  border-radius: 2px;
+}
+.work__list {
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+  @include mq(mobile) {
+    max-width: 280px;
+  }
+  &:not(:last-child) {
+    @include mq(mobile) {
+      margin-bottom: 15px;
+    }
+  }
+  @include mq(tablet) {
+    max-width: 334px;
+  }
+  @include mq(desktop) {
+    max-width: 480px;
+  }
+}
+
+.work__icon {
+  margin-bottom: 28px;
+  fill: var(--accent--color);
+  &:hover,
+  &:focus {
+    fill: var(--accent--wht--color);
+  }
+  @include mq(mobile) {
+    margin-bottom: 20px;
+  }
+}
+.work__pretitle {
+  color: var(--second-text-colot);
+}
