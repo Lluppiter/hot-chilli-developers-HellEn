@@ -89,10 +89,3 @@
     line-height: 1.65;
   }
 }
-
-.hero__button {
-  @include mq(tab) {
-    margin-left: 0;
-    margin-right: auto;
-  }
-}
