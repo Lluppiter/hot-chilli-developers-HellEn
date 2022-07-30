@@ -8,11 +8,43 @@
     var(--accent--wht--color) 695px
   );
   padding: 0px 0px;
+  @include mq(tab) {
+    max-width: 768px;
+    background: linear-gradient(
+      to bottom,
+      var(--background-color) 340px,
+      var(--accent--wht--color) 340px,
+      var(--accent--wht--color) 481px
+    );
+  }
+  @include mq(desk) {
+    max-width: 1680px;
+    height: 710px;
+    background-image: url(fire.svg),
+      linear-gradient(
+        to bottom,
+        var(--black-background) 560px,
+        var(--prime-background) 560px,
+        var(--prime-background) 710px
+      );
+    background-position: 100% 37%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .problems__title {
   color: var(--accent--wht--color);
   padding-top: 25px;
   @include text(800, 24px, 1.29, 0.03em, left, false);
+  @include mq(tab) {
+    padding-top: 55px;
+    width: 450px;
+  }
+  @include mq(desk) {
+    padding-top: 100px;
+    width: 450px;
+  }
 }
 .accent__text {
   color: var(--accent--color);
@@ -24,10 +56,15 @@
   height: 490px;
   background: var(--accent--wht--color);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-}
-.problems__tumb {
-  background-color: #fff;
-  padding: 20px 27px;
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 688px;
+    max-height: 320px;
+    margin-top: 30px;
+    padding: 28px 90px;
+  }
 }
 .problems__pretitile {
   @include text(700, 14px, 1.71, 0.08em, none, none);
@@ -35,6 +72,10 @@
 .problems__item {
   counter-increment: section;
   margin-bottom: 15px;
+  @include mq(tab) {
+    flex-basis: calc(50% - 34px);
+    margin-bottom: 20px;
+  }
 }
 
 .problems__pretitile::before {
