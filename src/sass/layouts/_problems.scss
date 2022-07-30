@@ -17,6 +17,21 @@
       var(--accent--wht--color) 481px
     );
   }
+  @include mq(desk) {
+    max-width: 1680px;
+    height: 710px;
+    background-image: url(fire.svg),
+      linear-gradient(
+        to bottom,
+        var(--black-background) 560px,
+        var(--prime-background) 560px,
+        var(--prime-background) 710px
+      );
+    background-position: 100% 37%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .problems__title {
   color: var(--accent--wht--color);
@@ -24,6 +39,10 @@
   @include text(800, 24px, 1.29, 0.03em, left, false);
   @include mq(tab) {
     padding-top: 55px;
+    width: 450px;
+  }
+  @include mq(desk) {
+    padding-top: 100px;
     width: 450px;
   }
 }
