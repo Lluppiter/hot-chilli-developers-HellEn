@@ -101,6 +101,9 @@
     &::placeholder {
         color: #FFFFFF;
     }
+    &:focus {
+        outline-color: var(--accent--color);
+    }
     @include mq(tab) {
         width: 390px;
     }
