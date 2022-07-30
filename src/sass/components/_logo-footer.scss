@@ -48,4 +48,8 @@
       @include text(700, 8, 1.25, 1.18, none, none);
     }
   }
+  @include mq(desk) {
+    position: absolute;
+    left: 26px;
+  }
 }
