@@ -18,7 +18,6 @@
   }
   @include mq(desk) {
     max-width: 1680px;
-<<<<<<< HEAD
     background-image: url(../images/campfire.svg),
       linear-gradient(
         to bottom,
@@ -27,17 +26,6 @@
         var(--accent--wht--color) 710px
       );
     background-position: 100% 45%;
-=======
-    height: 710px;
-    background-image: url(fire.svg),
-      linear-gradient(
-        to bottom,
-        var(--black-background) 560px,
-        var(--prime-background) 560px,
-        var(--prime-background) 710px
-      );
-    background-position: 100% 37%;
->>>>>>> main
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
@@ -50,19 +38,12 @@
   @include mq(tab) {
     padding-top: 55px;
     width: 450px;
-<<<<<<< HEAD
     padding-right: 30px;
   }
   @include mq(desk) {
     padding-top: 100px;
     width: 805px;
     font-size: 46px;
-=======
-  }
-  @include mq(desk) {
-    padding-top: 100px;
-    width: 450px;
->>>>>>> main
   }
 }
 .accent__text {
@@ -84,7 +65,6 @@
     margin-top: 30px;
     padding: 28px 90px;
   }
-<<<<<<< HEAD
   @include mq(desk) {
     max-width: 1314px;
     margin-top: 68px;
@@ -92,10 +72,6 @@
   }
 }
 .problems__text {
-=======
-}
-.problems__pretitile {
->>>>>>> main
   @include text(700, 14px, 1.71, 0.08em, none, none);
   @include mq(desk) {
     font-size: 20px;
@@ -109,13 +85,10 @@
     flex-basis: calc(50% - 34px);
     margin-bottom: 20px;
   }
-<<<<<<< HEAD
   @include mq(desk) {
     flex-basis: calc(33.3333% - 26.6667px);
     margin-bottom: 30px;
   }
-=======
->>>>>>> main
 }
 
 .problems__text::before {
