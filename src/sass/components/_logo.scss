@@ -1,18 +1,26 @@
 .logo {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-
+  gap: 3px;
+  max-width: 130px;
   color: var(--primary-text-color);
 
-  @include text(700, 5px, 1.2, 0.18em, none, uppercase);
-
-  &--or {
-    color: var(--accent--color);
+  &__title {
+    flex-direction: row;
+    gap: 4px;
+    @include text(800, 26, 1.23, 0.04, none, none);
+    &--upper {
+      text-transform: uppercase;
+    }
   }
-
-  &--footer {
-    max-width: 80px;
-    margin: 0 auto;
+  &__icon {
+    fill: var(--accent--color);
+  }
+  &__text {
+    @include text(700, 8, 1.25, 1.18, none, none);
+    text-transform: uppercase;
+    &--or {
+      color: var(--accent--color);
+    }
   }
 }
