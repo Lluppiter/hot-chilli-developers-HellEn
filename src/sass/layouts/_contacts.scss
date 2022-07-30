@@ -79,6 +79,12 @@
 
 .reg__label {
     width: 100%;
+    @include mq(tab) {
+        width: 390px;
+    }
+    @include mq(desk) {
+        width: 478px;
+    }
 }
 
 .reg__input {

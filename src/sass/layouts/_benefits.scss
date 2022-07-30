@@ -1,0 +1,72 @@
+.benefits {
+    position: relative;
+    @include mq(tab) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+.benefits__bg-wrap {
+    background-color: var(--primary-text-color);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.benefits__list {
+    background-color: #fff;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    padding: 35px 22px;
+    @include mq(tab) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 40px 98px;
+    }
+}
+
+.benefits__line {
+    margin-bottom: 30px;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    @include mq(tab) {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 236px;
+    }
+    @include mq(desk) {
+        width: 336px;
+        margin-right: 40px;
+        font-size: 20px;
+    }
+}
+
+.benefits__title {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
+    width: 180px;
+    margin-bottom: 30px;
+    @include mq(tab) {
+        width: 100%;
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+.benefits__number {
+    color: var(--accent--color);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.benefits__text {
+    line-height: 20px;
+    @include mq(desk) {
+        line-height: 24px;
+    }
+}
