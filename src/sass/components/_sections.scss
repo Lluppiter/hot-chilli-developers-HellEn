@@ -1,3 +1,19 @@
 .section {
-  padding: 130px 0;
+  padding: 70px 0;
+  margin: 0 auto;
+
+  @include mq(desk) {
+    padding: 130px 0;
+  }
+  &_footer {
+    padding: 24px 0 0;
+  }
+  &__footer {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  &__footer--dark {
+    background-color: var(--background-color);
+    padding: 20px 0;
+  }
 }

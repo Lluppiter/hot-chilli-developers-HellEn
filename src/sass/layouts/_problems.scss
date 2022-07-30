@@ -1,0 +1,48 @@
+.problems {
+  max-width: 480px;
+  height: 695px;
+  background: linear-gradient(
+    to bottom,
+    var(--background-color) 545px,
+    var(--accent--wht--color) 545px,
+    var(--accent--wht--color) 695px
+  );
+  padding: 0px 0px;
+}
+.problems__title {
+  color: var(--accent--wht--color);
+  padding-top: 25px;
+  @include text(800, 24px, 1.29, 0.03em, left, false);
+}
+.accent__text {
+  color: var(--accent--color);
+}
+.problems__list {
+  margin-top: 25px;
+  padding: 20px 27px;
+  max-width: 440px;
+  height: 490px;
+  background: var(--accent--wht--color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+.problems__tumb {
+  background-color: #fff;
+  padding: 20px 27px;
+}
+.problems__pretitile {
+  @include text(700, 14px, 1.71, 0.08em, none, none);
+}
+.problems__item {
+  counter-increment: section;
+  margin-bottom: 15px;
+}
+
+.problems__pretitile::before {
+  //   counter-increment: section;
+  content: '― 0' counter(section);
+
+  display: block;
+  margin-bottom: 5px;
+  @include text(700, 20px, 1.2, 0.08em, none, none);
+  color: var(--accent--color);
+}
