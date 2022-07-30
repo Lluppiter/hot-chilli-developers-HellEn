@@ -3,23 +3,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 22px;
 
-  &__adr {
+  &__list {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 30px;
+    align-items: center;
   }
 
   &__text {
     @include text(500, 14px, 2, 0.08em, center, none);
-    color: var(--second-text-colot);
+    color: var(--second-text-color);
+  }
+
+  &__link {
+    display: flex;
+  }
+  &__social-link--inst {
+    padding-left: 20px;
+    border-left: 1px solid #b9b9b9;
   }
 
   @include mq(tab) {
     flex-direction: row;
+    justify-content: space-between;
+    &__list {
+      flex-direction: row;
+      gap: 20px;
+    }
     &__text {
       text-align: start;
+    }
+  }
+  @include mq(desk) {
+    justify-content: flex-start;
+    gap: 0;
+    &__list {
+      margin: auto;
+      transform: translateX(-122px);
     }
   }
 }
