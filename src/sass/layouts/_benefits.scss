@@ -35,9 +35,7 @@
     }
 
     &__text {
-        font-size: 14px;
-        line-height: 1.64;
-        letter-spacing: 0.07em;
+        @include text(700, 14px, 1.64, 0.08em, start, none);
         width: 146px;
         color: var(--primary-text-color);
     }
@@ -45,13 +43,15 @@
     @media (min-width: 768px) {
         &__list {
             grid-template-columns: repeat(3, 1fr);
-            gap: unset;
+            gap: 21px;
             justify-items: start;
         }
 
         &__text {
-            &:last-child {
-                width: 139px;
+            width: 139px;
+
+            &--first {
+                width: 148px;
             }
         }
     }
@@ -73,7 +73,7 @@
         &__text {
             position: absolute;
             left: 82px;
-            width: 238px !important;
+            width: 239px;
             font-size: 20px;
         }
     }
