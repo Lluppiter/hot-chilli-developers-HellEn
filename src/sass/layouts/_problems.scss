@@ -34,11 +34,10 @@
 .problems__title {
   color: var(--accent--wht--color);
   padding-top: 25px;
-  @include text(800, 24px, 1.29, 0.03em, left, false);
+  @include text(800, 24px, 1.29, 0.03em, left, none);
   @include mq(tab) {
     padding-top: 55px;
     width: 450px;
-    padding-right: 30px;
   }
   @include mq(desk) {
     padding-top: 100px;
@@ -46,7 +45,7 @@
     font-size: 46px;
   }
 }
-.accent__text {
+.problems__accent-text {
   color: var(--accent--color);
 }
 .problems__list {
@@ -99,5 +98,11 @@
   color: var(--accent--color);
   @include mq(desk) {
     margin-bottom: 10px;
+  }
+}
+.problems__text-hiden {
+  color: var(--primary-text-color);
+  @include mq(desk) {
+    color: var(--accent--wht--color);
   }
 }
