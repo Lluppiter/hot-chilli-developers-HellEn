@@ -10,7 +10,7 @@
   }
 }
 .about {
-  position: relative;  
+  position: relative;
 }
 .about__wrap {
   @include mq(tab) {
@@ -98,7 +98,7 @@
 }
 .about__desc {
   @include text(500, 12px, 1.67, false, false, false);
-  color: var(--second-text-colot);
+  color: #b9b9b9;
   margin-bottom: 20px;
   @include mq(tab) {
     &:not(:last-of-type) {
@@ -163,7 +163,7 @@
   transition: opacity 250ms, transform 250ms;
 
   &.is-hidden {
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
     pointer-events: none;
     transform: scale(50%, 50%);
