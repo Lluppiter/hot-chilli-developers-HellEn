@@ -2,8 +2,8 @@
   max-width: 480px;
   background: linear-gradient(
     to bottom,
-    var(--background-color) 545px,
-    var(--accent--wht--color) 545px,
+    var(--background-color) 450px,
+    var(--accent--wht--color) 430px,
     var(--accent--wht--color) 695px
   );
   padding: 0px 0px;
@@ -11,7 +11,7 @@
     max-width: 768px;
     background: linear-gradient(
       to bottom,
-      var(--background-color) 340px,
+      var(--background-color) 350px,
       var(--accent--wht--color) 340px,
       var(--accent--wht--color) 481px
     );
@@ -21,8 +21,8 @@
     background-image: url(../images/campfire.svg),
       linear-gradient(
         to bottom,
-        var(--background-color) 560px,
-        var(--accent--wht--color) 560px,
+        var(--background-color) 545px,
+        var(--accent--wht--color) 530px,
         var(--accent--wht--color) 710px
       );
     background-position: 100% 45%;
@@ -67,6 +67,7 @@
   @include mq(desk) {
     max-width: 1314px;
     margin-top: 68px;
+    max-height: 335px;
     padding: 67px 113px;
   }
 }
@@ -103,6 +104,6 @@
 .problems__text-hiden {
   color: var(--primary-text-color);
   @include mq(desk) {
-    color: var(--accent--wht--color);
+    display: none;
   }
 }
