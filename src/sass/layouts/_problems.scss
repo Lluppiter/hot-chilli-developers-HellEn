@@ -1,6 +1,5 @@
 .problems {
   max-width: 480px;
-  height: 695px;
   background: linear-gradient(
     to bottom,
     var(--background-color) 545px,
@@ -19,15 +18,14 @@
   }
   @include mq(desk) {
     max-width: 1680px;
-    height: 710px;
-    background-image: url(fire.svg),
+    background-image: url(../images/campfire.svg),
       linear-gradient(
         to bottom,
-        var(--black-background) 560px,
-        var(--prime-background) 560px,
-        var(--prime-background) 710px
+        var(--background-color) 560px,
+        var(--accent--wht--color) 560px,
+        var(--accent--wht--color) 710px
       );
-    background-position: 100% 37%;
+    background-position: 100% 45%;
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
@@ -40,10 +38,12 @@
   @include mq(tab) {
     padding-top: 55px;
     width: 450px;
+    padding-right: 30px;
   }
   @include mq(desk) {
     padding-top: 100px;
-    width: 450px;
+    width: 805px;
+    font-size: 46px;
   }
 }
 .accent__text {
@@ -65,9 +65,18 @@
     margin-top: 30px;
     padding: 28px 90px;
   }
+  @include mq(desk) {
+    max-width: 1314px;
+    margin-top: 68px;
+    padding: 67px 113px;
+  }
 }
-.problems__pretitile {
+.problems__text {
   @include text(700, 14px, 1.71, 0.08em, none, none);
+  @include mq(desk) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 .problems__item {
   counter-increment: section;
@@ -76,14 +85,19 @@
     flex-basis: calc(50% - 34px);
     margin-bottom: 20px;
   }
+  @include mq(desk) {
+    flex-basis: calc(33.3333% - 26.6667px);
+    margin-bottom: 30px;
+  }
 }
 
-.problems__pretitile::before {
-  //   counter-increment: section;
+.problems__text::before {
   content: '― 0' counter(section);
-
   display: block;
   margin-bottom: 5px;
   @include text(700, 20px, 1.2, 0.08em, none, none);
   color: var(--accent--color);
+  @include mq(desk) {
+    margin-bottom: 10px;
+  }
 }
