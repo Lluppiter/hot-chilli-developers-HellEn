@@ -21,9 +21,13 @@
 }
 .work__title--head {
   margin-bottom: 30px;
-  @include text(800, 20px, 1.3, 0.03em, center, false);
+  @include text(800, 20px, 1.3, 0.03em, left, false);
+  @include mq(mob) {
+    text-align: center;
+  }
   @include mq(tab) {
     font-size: 26px;
+    text-align: center;
   }
 
   @include mq(desk) {
