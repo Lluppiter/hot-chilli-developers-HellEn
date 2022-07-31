@@ -5,12 +5,18 @@
   @include mq(desk) {
     padding: 130px 0;
   }
-  &_footer {
-    padding: 24px 0 0;
-  }
   &__footer {
-    padding-top: 0;
+    padding-top: 24px;
     padding-bottom: 30px;
+
+    @include mq(tab) {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+    @include mq(desk) {
+      padding-top: 55px;
+      padding-bottom: 55px;
+    }
   }
   &__footer--dark {
     background-color: var(--background-color);
