@@ -32,21 +32,21 @@
     }
   }
   &__text {
-    font-size: 14px;
-    letter-spacing: 0.08em;
-    width: 146px;
+    @include text(700, 14px, 1.64, 0.08em, start, none);
   }
 
   @media (min-width: 768px) {
     &__list {
       grid-template-columns: repeat(3, 1fr);
-      gap: unset;
+      gap: 21px;
       justify-items: start;
     }
 
     &__text {
-      &:last-child {
-        width: 139px;
+      width: 139px;
+
+      &--first {
+        width: 148px;
       }
     }
   }
@@ -67,7 +67,7 @@
     &__text {
       position: absolute;
       left: 82px;
-      width: 238px !important;
+      width: 239px;
       font-size: 20px;
     }
   }
