@@ -1,0 +1,21 @@
+.link {
+  &__footer {
+    color: var(--primary-text-color);
+    @include text(600, 14, 1.21, 0.08em, none, none);
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      background-image: url(../images/svgorig/tel.svg);
+      transform: translateY(+25%);
+    }
+  }
+  @include mq(tab) {
+    @include text(600, 20, 1.2, 0.08em, none, none);
+  }
+  @include mq(desk) {
+    @include text(600, 30, 1.23, 0.08em, none, none);
+  }
+}

@@ -8,8 +8,11 @@
 @import './base/body';
 /* components */
 @import './components/sections';
-@import './components/container.scss';
+@import './components/container';
 @import './components/button';
+@import './components/logo';
+@import './components/logo-footer';
+@import './components/link';
 /* layout */
 @import './layouts/header';
 @import './layouts/hero';
