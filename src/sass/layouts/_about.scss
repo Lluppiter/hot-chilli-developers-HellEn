@@ -1,71 +1,111 @@
 .about .section__title {
   margin-bottom: 30px;
+  @include text(800, 20px, 1.3, 0.03em, false, false);
+  @include mq(tab) {
+    font-size: 26px;
+  }
+  @include mq(desk) {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
 }
 .about {
   position: relative;  
 }
 .about__wrap {
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     display: flex;
     gap: 42px;
   }
-  @media screen and (min-width: 1366px) {
+  @include mq(desk) {
     gap: 60px;
   }
 }
 .about__img {
   display: block;
+
   margin-bottom: 20px;
 }
+.about__exp {
+  max-width: 280px;
+  @include mq(tab) {
+    max-width: 403px;
+  }
+  @include mq(desk) {
+    max-width: 641px;
+  }
+}
 .about__title {
+  @include text(800, 20px, 1.2, 0.08em, false, false);
   padding-bottom: 10px;
   border-bottom: 1px solid var(--second-text-colot);
   margin-bottom: 20px;
-  @media screen and (min-width: 1366px) {
+  @include mq(desk) {
+    font-size: 30px;
     padding-bottom: 15px;
     margin-bottom: 30px;
   }
 }
 .about__list {
   margin-bottom: 20px;
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 1366px) {
+  @include mq(desk) {
     margin-bottom: 43px;
+    width: 589px;
   }
 }
 .about__item {
+  position: relative;
+  margin-left: 27px;
+  @include text(600, 14px, 1.2, 0.06em, false, false);
+  @include mq(tab) {
+    @include text(false, 12px, 1.25, 0.06em, false, false);
+  }
+  @include mq(desk) {
+    @include text(false, 16px, false, false, false, false);
+    margin-left: 59px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 20px;
-    @media screen and (min-width: 1366px) {
+    @include mq(desk) {
       margin-bottom: 28px;
     }
   }
   &::before {
     content: '';
-    display: inline-block;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: -27px;
     width: 18px;
     height: 14px;
     background-image: url('../images/check.svg');
     background-repeat: no-repeat;
 
-    margin-right: 9px;
-    @media screen and (min-width: 768px) {
-      margin-right: 10px;
+    @include mq(tab) {
+      left: -29px;
+      top: 0;
     }
-    @media screen and (min-width: 1366px) {
+    @include mq(desk) {
       width: 25px;
       height: 20px;
-      margin-right: 34px;
+      left: -59px;
     }
   }
 }
 .about__desc {
+  @include text(500, 12px, 1.67, false, false, false);
+  color: var(--second-text-colot);
   margin-bottom: 20px;
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     &:not(:last-of-type) {
       margin-bottom: 15px;
+    }
+    @include mq(desk) {
+      @include text(500, 18px, 1.56, false, false, false);
     }
   }
 
@@ -75,10 +115,10 @@
     width: 20px;
     height: 2px;
     margin-bottom: 20px;
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
       margin-bottom: 30px;
     }
-    @media screen and (min-width: 1366px) {
+    @include mq(desk) {
       margin-bottom: 43px;
     }
 
@@ -86,10 +126,16 @@
   }
 }
 .about__btn {
+  @include text(500, 12px, 1.67, false, false, false);
   color: var(--accent--color);
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--accent--color);
+  padding: 0;
+  @include mq(desk) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 .modal {
@@ -100,7 +146,7 @@
   width: 320px;
   height: 420px;
   padding: 40px;
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     width: 480px;
     height: 650px;
   }
