@@ -1,0 +1,199 @@
+.program {
+  padding-top: 50px;
+  padding-bottom: 550px;
+  color: var(--accent--wht--color);
+  background-color: var(--background-color);
+  background-image: url(../images/programm/program-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 100px) bottom 453px;
+
+  @include mq(tab) {
+    padding-top: 60px;
+    padding-bottom: 371px;
+
+    background-image: url(../images/programm/program-bg-tab.png);
+    background-repeat: no-repeat;
+    background-position: right calc(50% - 195px) bottom 269px;
+  }
+
+  @include mq(desk) {
+    padding-top: 106px;
+    padding-bottom: 340px;
+
+    background-image: url(../images/programm/program-bg-desk.png);
+    background-repeat: no-repeat;
+    background-position: left calc(50% - 505px) bottom 28px;
+  }
+}
+
+.program__title {
+  margin-bottom: 30px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include mq(tab) {
+    margin-bottom: 52px;
+
+    text-align: left;
+    font-size: 26px;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 106px;
+
+    font-size: 46px;
+  }
+}
+
+.program__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 80px;
+
+  @include mq(tab) {
+    gap: 30px;
+    margin-left: 87px;
+  }
+
+  @include mq(desk) {
+    flex-direction: row;
+    gap: 46px;
+    margin-left: 0;
+  }
+}
+
+.semester {
+  position: relative;
+
+  @include mq(desk) {
+    width: 226px;
+  }
+
+  &:not(:last-child):before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 3px;
+    height: calc(100% + 40px);
+    background-color: var(--accent--wht--color);
+
+    top: 14px;
+    left: -28px;
+
+    @include mq(tab) {
+      height: calc(100% + 30px);
+      left: -42px;
+    }
+
+    @include mq(desk) {
+      width: calc(100% + 650px);
+      height: 3px;
+      top: -40px;
+      left: -190px;
+    }
+  }
+}
+
+.semester__title {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent--color);
+
+    top: 30%;
+    left: -32px;
+
+    @include mq(tab) {
+      left: -46px;
+    }
+
+    @include mq(desk) {
+      width: 16px;
+      height: 16px;
+      top: -46px;
+      left: 0;
+    }
+  }
+
+  @include mq(desk) {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &--number {
+    @include mq(desk) {
+      font-size: 30px;
+      line-height: 0.93;
+    }
+  }
+}
+
+.semester__subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include mq(tab) {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  @include mq(desk) {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.semester__subject-item {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.65;
+
+  color: var(--accent--color);
+
+  @include mq(tab) {
+    width: 150px;
+  }
+
+  @include mq(desk) {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+.semester__topic-list {
+  margin-top: 5px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.08em;
+
+  color: var(--second-text-color);
+
+  opacity: 0.5;
+
+  @include mq(desk) {
+    margin-top: 10px;
+
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
