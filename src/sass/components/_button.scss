@@ -7,6 +7,9 @@
   background-color: var(--accent--color);
   cursor: pointer;
 
+  transition: color var(--duration-animation),
+    background-color var(--duration-animation), border var(--duration-animation);
+
   @include text(700, 12, 1.25, 0.08em, center, uppercase);
   border: 2px solid var(--accent--color);
 
