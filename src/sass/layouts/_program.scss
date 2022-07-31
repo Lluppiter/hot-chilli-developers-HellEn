@@ -87,7 +87,7 @@
 
     @include mq(tab) {
       height: calc(100% + 30px);
-      left: -42px;
+      left: -45px;
     }
 
     @include mq(desk) {
@@ -120,7 +120,7 @@
     left: -32px;
 
     @include mq(tab) {
-      left: -46px;
+      left: -49px;
     }
 
     @include mq(desk) {
