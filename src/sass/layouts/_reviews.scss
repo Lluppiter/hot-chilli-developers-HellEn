@@ -1,0 +1,195 @@
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 50px 110px;
+  padding: 50px 82px;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.reviews__icon {
+  display: block;
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews__overlay {
+  width: 706px;
+}
+
+.reviews__title {
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.23;
+  /* identical to box height */
+
+  letter-spacing: 0.08em;
+
+  color: var(--accent--color);
+}
+
+.reviews__exp {
+  width: 482px;
+  margin-bottom: 18px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  /* or 129% */
+
+  letter-spacing: 0.08em;
+
+  color: var(--second-text-colot);
+}
+
+.reviews__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.56;
+  /* or 156% */
+
+  color: var(--third-text-color);
+}
+
+.reviews__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.56;
+  /* identical to box height, or 156% */
+
+  color: var(--accent--color);
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Точки (булиты) */
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Активная точка */
+.slider .slick-dots li.slick-active button {
+  border: 1px solid var(--accent--color);
+}
+
+/* Элемент точки */
+.slider .slick-dots li:nth-child(1) button {
+  font-size: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-image: url(../images/reviews/petro_bidenko.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider .slick-dots li:nth-child(2) button {
+  font-size: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-image: url(../images/reviews/rostyslav_derii.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider .slick-dots li:nth-child(3) button {
+  font-size: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-image: url(../images/reviews/andrii_sopelniak.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider .slick-dots li:nth-child(4) button {
+  font-size: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-image: url(../images/reviews/valeriia_stetsiuk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider .slick-dots li:nth-child(5) button {
+  font-size: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-image: url(../images/reviews/liubov_pushkina.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider .slick-dots li:nth-child(6) button {
+  font-size: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-image: url(../images/reviews/vova_boychyshyn.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider .slick-dots li:nth-child(7) button {
+  font-size: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-image: url(../images/reviews/rodion.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 44%;
+  z-index: 10;
+  font-size: 0;
+  width: 25px;
+  height: 10px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 26px;
+  background: url(../images/reviews/prev.svg) 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 26px;
+  background: url(../images/reviews/next.svg) 0 / 100% no-repeat;
+}
+
+.slider__item {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
