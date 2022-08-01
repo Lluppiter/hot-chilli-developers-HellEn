@@ -13,11 +13,12 @@
 
   @include mq(tab) {
     max-width: 768px;
+    padding-top: 30px;
     padding-bottom: 140px;
 
     background-image: url(../images/hero/Group-tab@2x.png),
       url(../images/hero/wave-bg.svg);
-    background-position: calc(50% + 198px) top, left -20px top -320px;
+    background-position: left calc(50% + 198px) top 30px, left -20px top -290px;
     background-size: 370px 315px, 1300px 713px;
   }
 
