@@ -1,16 +1,10 @@
 .section__work {
   @include mq(mob-only) {
-    padding-top: 70px;
+    padding-top: 35px;
     padding-bottom: 40px;
   }
-  @include mq(tab) {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  @include mq(desk) {
-    padding: 130px 0;
-  }
 }
+
 .work {
   flex-wrap: wrap;
   gap: 15px;
