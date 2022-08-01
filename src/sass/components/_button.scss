@@ -50,11 +50,14 @@
         transform: translateY(50%);
     }
         @include mq(desk) {
-            display: inline-block;
-            position: absolute;
-            right: 25px;
-            top: 0px;
-            transform: translateY(50%);
+            display: block;
+            position: relative;
+            right: inherit;
+            top: inherit;
+            // right: 25px;
+            // top: 0px;
+            transform: inherit;
+            margin-left: auto;
         }
 
     &:hover,
