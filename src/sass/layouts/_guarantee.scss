@@ -5,10 +5,6 @@
         color: var(--primary-text-color);
     }
 
-    &__container {
-        padding: 0;
-    }
-
     &__list {
         width: 100%;
         padding: 45px 20px;
@@ -46,14 +42,15 @@
         padding: 6px 0;
         background: var(--second-background-color);
     }
+    @include mq(mob-only) {
+        &__container {
+            padding: 0;
+        }
+    }
 
     @media(min-width: 768px) {
         &__list {
             padding: 45px 65px;
-        }
-
-        &__container {
-            padding: 0 20px;
         }
     }
 

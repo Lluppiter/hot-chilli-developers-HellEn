@@ -29,7 +29,7 @@
         padding: 60px;
     }
     @include mq(desk) {
-        padding: 100px 295px;
+        padding: 100px 245px;
     }
 }
 
@@ -68,13 +68,16 @@
     font-size: 12px;
     letter-spacing: 0.08em;
     text-align: center;
-    margin-bottom: 43px;
     @include mq(tab) {
         font-size: 16px;
     }
     @include mq(desk) {
         font-size: 30px;
     }
+}
+
+.reg__desc--second {
+    margin-bottom: 43px;
 }
 
 .reg__label {
@@ -100,6 +103,9 @@
         left: 40px;
         line-height: 24px;
     }
+    transform-origin: top-left;
+    transition: transform 500ms ease;
+    transition: opacity 500ms ease;
 }
 
 .reg__input {
@@ -114,14 +120,21 @@
     margin-bottom: 20px;
     font-size: 14px;
     &::placeholder {
-        color: #FFFFFF;
+        color: #757575;
+        opacity: 0;
+        transition: opacity 200ms ease;
     }
     &:focus {
         outline-color: var(--accent--color);
+        &::placeholder {
+            opacity: 1;
+        }
     }
-    &:focus + .reg__input__label {
+    &:focus + .reg__input__label, &:not(:placeholder-shown)+.reg__input__label {
+        opacity: 0;
         @include mq(desk) {
-            top: -25px;
+            transform: translate(-40px, -22px) scale(0.7);
+            opacity: 1;
         }
     }
     @include mq(tab) {
@@ -130,8 +143,11 @@
     @include mq(desk) {
         width: 478px;
         font-size: 20px;
-        padding: 23px 40px;
+        padding: 25px 40px 22px 40px;
         margin-bottom: 30px;
+    }
+    &:invalid {
+        outline-color: #dc143c;
     }
 }
 

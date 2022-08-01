@@ -1,53 +1,35 @@
 .footer-logo {
   display: flex;
   flex-direction: column;
-  gap: 1px;
-  max-width: 80px;
+  gap: 4px;
   color: var(--primary-text-color);
-  margin-left: auto;
-  margin-right: auto;
 
-  &__title {
-    margin: 0;
-    padding: 0;
-    @include text(800, 16, 1.23, 0.04, none, none);
-    &--upper {
-      text-transform: uppercase;
-    }
+  @include mq(tab) {
+    gap: 5px;
   }
+
   &__icon {
-    margin: 0 4px;
-    width: 14px;
+    width: 80px;
     height: 20px;
-    fill: var(--accent--color);
-    transform: translateY(+15%);
   }
+
   &__text {
-    @include text(700, 5, 1.25, 1.18, none, none);
-    text-transform: uppercase;
+    @include text(700, 5, 1.25, 0.18em, start, uppercase);
     &--or {
       color: var(--accent--color);
     }
   }
+
   @include mq(tab) {
-    gap: 3px;
-    max-width: 128px;
-    margin-left: 0;
-    margin-right: 0;
-    &__title {
-      @include text(800, 26, 1.23, 0.04, none, none);
-      &--upper {
-        text-transform: uppercase;
-      }
-    }
     &__icon {
-      width: 22px;
+      width: 120px;
       height: 30px;
     }
     &__text {
-      @include text(700, 8, 1.25, 1.18, none, none);
+      @include text(700, 8, 1.25, 0.18em, start, uppercase);
     }
   }
+
   @include mq(desk) {
     position: absolute;
     left: 26px;
