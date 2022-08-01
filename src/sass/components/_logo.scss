@@ -5,15 +5,6 @@
   max-width: 130px;
   color: var(--primary-text-color);
 
-  @include mq(mob-only){
-    max-width: 80px;
-    gap: 1px;
-    &__title{
-      @include text(800, 16, 1.23, 0.04, none, none);
-    }
-  }
-
-
 
   &__title {
     flex-direction: row;
