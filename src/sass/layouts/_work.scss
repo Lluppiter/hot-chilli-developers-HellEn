@@ -47,6 +47,9 @@
   .work__list:hover & {
     color: var(--accent--wht--color);
   }
+  .work__list:focus & {
+    color: var(--accent--wht--color);
+  }
   @include mq(tab) {
     margin-top: 28px;
     margin-bottom: 20px;
@@ -75,6 +78,9 @@
   .work__list:hover & {
     color: var(--accent--wht--color);
   }
+  .work__list:focus & {
+    color: var(--accent--wht--color);
+  }
 }
 
 .work__text::before {
@@ -88,6 +94,9 @@
   height: 2px;
   background: var(--accent--color);
   border-radius: 2px;
+  .work__list:hover & {
+    background: var(--accent--wht--color);
+  }
   .work__list:hover & {
     background: var(--accent--wht--color);
   }
@@ -121,9 +130,6 @@
   &:hover,
   &:focus {
     background-color: var(--accent--color);
-    transition: color var(--duration-animation),
-      background-color var(--duration-animation),
-      border var(--duration-animation);
   }
 }
 .work__box {
@@ -135,6 +141,9 @@
     margin-bottom: 20px;
   }
   .work__list:hover & {
+    fill: var(--accent--wht--color);
+  }
+  .work__list:focus & {
     fill: var(--accent--wht--color);
   }
 }
