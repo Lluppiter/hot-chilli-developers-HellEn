@@ -1,7 +1,11 @@
 .section__work {
-  @include mq(tab) {
+  @include mq(mob-only) {
     padding-top: 70px;
     padding-bottom: 40px;
+  }
+  @include mq(tab) {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   @include mq(desk) {
     padding: 130px 0;
@@ -22,6 +26,9 @@
 .work__title--head {
   margin-bottom: 30px;
   @include text(800, 20px, 1.3, 0.03em, left, false);
+  @include mq(mob-only) {
+    text-align: center;
+  }
   @include mq(mob) {
     text-align: center;
   }
