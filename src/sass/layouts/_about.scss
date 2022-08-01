@@ -115,6 +115,10 @@
   }
   @include mq(desk) {
     @include text(500, 18px, 1.56, false, false, false);
+    &:not(:last-of-type) {
+      margin-bottom: 28px;
+    }
+    margin-bottom: 22px;
   }
 
   &:first-of-type::before {
