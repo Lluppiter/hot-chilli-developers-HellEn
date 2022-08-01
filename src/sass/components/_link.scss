@@ -1,5 +1,7 @@
 .link {
   &__footer {
+    display: flex;
+    align-items: center;
     color: var(--primary-text-color);
     @include text(600, 14, 1.21, 0.08em, none, none);
     &::before {
@@ -7,9 +9,8 @@
       display: inline-block;
       width: 20px;
       height: 20px;
-      margin-right: 10px;
+      margin-right: 5px;
       background-image: url(../images/svgorig/tel.svg);
-      transform: translateY(+25%);
     }
   }
   @include mq(tab) {
