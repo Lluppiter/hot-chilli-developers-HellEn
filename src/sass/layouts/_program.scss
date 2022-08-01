@@ -7,6 +7,8 @@
   background-repeat: no-repeat;
   background-position: right calc(50% - 100px) bottom 453px;
 
+  overflow: hidden;
+
   @include mq(tab) {
     padding-top: 60px;
     padding-bottom: 371px;
@@ -35,6 +37,8 @@
   text-align: center;
   letter-spacing: 0.03em;
 
+  transition: transform 250ms linear;
+
   @include mq(tab) {
     margin-bottom: 52px;
 
@@ -46,6 +50,12 @@
     margin-bottom: 106px;
 
     font-size: 46px;
+  }
+
+  .program:hover & {
+    @include mq(desk) {
+      transform: rotateX(360deg);
+    }
   }
 }
 
@@ -87,14 +97,22 @@
 
     @include mq(tab) {
       height: calc(100% + 30px);
-      left: -42px;
+      left: -45px;
     }
 
     @include mq(desk) {
       width: calc(100% + 650px);
       height: 3px;
-      top: -40px;
+      top: -280px;
       left: -190px;
+    }
+
+    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .program:hover &::before {
+    @include mq(desk) {
+      top: -40px;
     }
   }
 }
@@ -120,7 +138,7 @@
     left: -32px;
 
     @include mq(tab) {
-      left: -46px;
+      left: -49px;
     }
 
     @include mq(desk) {
@@ -128,7 +146,15 @@
       height: 16px;
       top: -46px;
       left: 0;
+
+      background-color: transparent;
     }
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+  }
+
+  .program:hover &::before {
+    background-color: var(--accent--color);
   }
 
   @include mq(desk) {
