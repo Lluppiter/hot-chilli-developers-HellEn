@@ -1,5 +1,9 @@
 .hero {
+  max-width: 480px;
+  overflow: hidden;
   padding-bottom: 302px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-image: url(../images/hero/Group-mob@2x.png),
     url(../images/hero/wave-bg.svg);
@@ -8,22 +12,25 @@
   background-size: 208px 178px, 768px 500px;
 
   @include mq(tab) {
+    max-width: 768px;
     padding-bottom: 140px;
 
     background-image: url(../images/hero/Group-tab@2x.png),
       url(../images/hero/wave-bg.svg);
-    background-position: calc(50% + 198px) top, left -320px;
+    background-position: calc(50% + 198px) top, left -20px top -320px;
     background-size: 370px 315px, 1300px 713px;
   }
 
   @include mq(desk) {
+    max-width: 1680px;
     padding-top: 55px;
     padding-bottom: 372px;
 
     background-image: url(../images/hero/Group-desk@2x.png),
       url(../images/hero/wave-bg.svg);
-    background-position: calc(50% + 330px) top, 50% -95px;
-    background-size: 842px 718px, 1680px 878px;
+    background-position: calc(50% + 330px) top, left 50% top -130px;
+    background-size: 842px 718px, cover;
+    // 1680px 878px
   }
 }
 
