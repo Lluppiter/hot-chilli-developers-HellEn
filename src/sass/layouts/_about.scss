@@ -36,7 +36,6 @@
   }
 }
 .about__exp {
-  max-width: 280px;
   @include mq(tab) {
     max-width: 403px;
   }
