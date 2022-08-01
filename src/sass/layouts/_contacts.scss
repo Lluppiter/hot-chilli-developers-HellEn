@@ -85,6 +85,21 @@
     @include mq(desk) {
         width: 478px;
     }
+    position: relative;
+}
+
+.reg__input__label {
+    position: absolute;
+    top: 22%;
+    left: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    @include mq(desk) {
+        font-size: 20px;
+        left: 40px;
+        line-height: 24px;
+    }
 }
 
 .reg__input {
@@ -103,6 +118,11 @@
     }
     &:focus {
         outline-color: var(--accent--color);
+    }
+    &:focus + .reg__input__label {
+        @include mq(desk) {
+            top: -25px;
+        }
     }
     @include mq(tab) {
         width: 390px;
