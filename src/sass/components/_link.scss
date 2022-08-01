@@ -10,7 +10,18 @@
       width: 20px;
       height: 20px;
       margin-right: 5px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       background-image: url(../images/svgorig/tel.svg);
+      @include mq(tab) {
+        width: 24px;
+        height: 24px;
+      }
+      @include mq(desk) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
   @include mq(tab) {
