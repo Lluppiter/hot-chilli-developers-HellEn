@@ -1,0 +1,32 @@
+<div class="backdrop is-hidden" data-regi>
+  <div class="modal-window__reg">
+    <form action="" class="reg__form">
+      <label for="reg__input" class="reg__label">
+        <input
+          type="text"
+          class="reg__input reg__input--name"
+          pattern="[a-z]{20}"
+          placeholder="Your Name"
+        />
+        <span class="reg__input__label">Name*</span>
+      </label>
+      <label class="reg__label">
+        <input
+          type="tel"
+          class="reg__input reg__input--phone"
+          pattern="[0-9]{10}"
+          placeholder="0XXXXXXXXX"
+        />
+        <span class="reg__input__label">Phone*</span>
+      </label>
+      <a href="tel:+38(099)1234567" class="button reg__button"
+        >I want consultation</a
+      >
+    </form>
+    <button type="button" class="close__button" data-regi-close>
+      <svg class="close__icon" width="20px" height="20px">
+        <use href="./images/icon.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
