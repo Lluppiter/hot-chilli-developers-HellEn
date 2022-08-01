@@ -1,21 +1,21 @@
 .program {
   padding-top: 50px;
-  padding-bottom: 550px;
+  padding-bottom: 97px;
   color: var(--accent--wht--color);
   background-color: var(--background-color);
   background-image: url(../images/programm/program-bg-mob.png);
   background-repeat: no-repeat;
-  background-position: right calc(50% - 100px) bottom 453px;
+  background-position: right calc(50% - 100px) bottom;
 
   overflow: hidden;
 
   @include mq(tab) {
     padding-top: 60px;
-    padding-bottom: 371px;
+    padding-bottom: 137px;
 
     background-image: url(../images/programm/program-bg-tab.png);
     background-repeat: no-repeat;
-    background-position: right calc(50% - 195px) bottom 269px;
+    background-position: right calc(50% - 195px) bottom 35px;
   }
 
   @include mq(desk) {
@@ -190,7 +190,7 @@
 .semester__subject-item {
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.65;
+  line-height: 1.67;
 
   color: var(--accent--color);
 
