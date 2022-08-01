@@ -1,0 +1,137 @@
+.section__work {
+  @include mq(tab) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  @include mq(desk) {
+    padding: 130px 0;
+  }
+}
+.work {
+  flex-wrap: wrap;
+  gap: 15px;
+  display: flex;
+  text-align: center;
+  @include mq(tab) {
+    gap: 20px;
+  }
+  @include mq(desk) {
+    gap: 30px;
+  }
+}
+.work__title--head {
+  margin-bottom: 30px;
+  @include text(800, 20px, 1.3, 0.03em, left, false);
+  @include mq(mob) {
+    text-align: center;
+  }
+  @include mq(tab) {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 47px;
+    text-align: left;
+    font-size: 46px;
+  }
+}
+.work__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  @include text(700, 14px, 1.42, 0.08em, center, false);
+  .work__list:hover & {
+    color: var(--accent--wht--color);
+  }
+  @include mq(tab) {
+    margin-top: 28px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 270px;
+  }
+  @include mq(desk) {
+    margin-top: 28px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 362px;
+    height: 53px;
+  }
+}
+
+.work__text {
+  color: var(--second-text-color);
+  max-width: 440px;
+  @include text(500, 12px, 1.67, 0.08em, center, false);
+  @include mq(desk) {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 362px;
+    height: 138px;
+  }
+  .work__list:hover & {
+    color: var(--accent--wht--color);
+  }
+}
+
+.work__text::before {
+  content: '';
+  display: block;
+  margin-bottom: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+  height: 2px;
+  background: var(--accent--color);
+  border-radius: 2px;
+  .work__list:hover & {
+    background: var(--accent--wht--color);
+  }
+  @include mq(desk) {
+    margin-bottom: 15px;
+  }
+}
+.work__list {
+  padding: 30px 20px;
+  max-width: 440px;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+  @include mq(mob) {
+    &:hover,
+    &:focus {
+      background-color: var(--accent--color);
+    }
+  }
+  @include mq(tab) {
+    flex-basis: calc(50% - 10px);
+    padding: 35px 32px;
+    min-width: 334px;
+    height: 315px;
+  }
+  @include mq(desk) {
+    flex-basis: calc(33.33% - 20px);
+    padding-top: 35px;
+    padding: 35px 28px 55px;
+    min-width: 418px;
+    height: 396px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--accent--color);
+  }
+}
+.work__box {
+  text-align: center;
+}
+.work__icon {
+  fill: var(--accent--color);
+  @include mq(mobile) {
+    margin-bottom: 20px;
+  }
+  .work__list:hover & {
+    fill: var(--accent--wht--color);
+  }
+}

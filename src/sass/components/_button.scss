@@ -1,13 +1,81 @@
 .button {
   width: 260px;
-  height: 480px;
+  height: 48px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
+  background-color: var(--accent--color);
+  cursor: pointer;
+
+  transition: color var(--duration-animation),
+    background-color var(--duration-animation), border var(--duration-animation);
+
+  @include text(700, 12, 1.25, 0.08em, center, uppercase);
   border: 2px solid var(--accent--color);
 
-  background-color: transparent;
-
   @include mq(desk) {
-    width: 254px;
+    width: 354px;
     height: 70px;
+    padding-top: 27px;
+    padding-bottom: 26px;
+
+    @include text(700, 14, 1.21, 0.14em, center, uppercase);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent--wht--color);
+    color: var(--accent--color);
+  }
+
+  &--header {
+    background-color: transparent;
+    color: var(--accent--color);
+    display: none;
+
+    @include mq(mob-only) {
+      .mobile-menu.is-open + & {
+          display: inline-block;
+          position: absolute;
+          z-index: 5;
+          top: 300px;
+          left: 50%;
+          transform: translateX(-50%);
+      }}
+      @include mq(tab) {
+        display: inline-block;
+        position: absolute;
+        right: 100px;
+        top: 5px;
+        transform: translateY(50%);
+    }
+        @include mq(desk) {
+            display: inline-block;
+            position: absolute;
+            right: 25px;
+            top: 0px;
+            transform: translateY(50%);
+        }
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent--color);
+      color: var(--accent--wht--color);
+    }
+  }
+
+  // &--header-mobile {
+  //   // display: none;
+  // }
+
+  &--hero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--accent--wht--color);
+
+    @include mq(tab) {
+      margin-left: 0;
+    }
   }
 }

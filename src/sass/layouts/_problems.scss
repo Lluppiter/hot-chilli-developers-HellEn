@@ -1,0 +1,109 @@
+.problems {
+  max-width: 480px;
+  background: linear-gradient(
+    to bottom,
+    var(--background-color) 450px,
+    var(--accent--wht--color) 430px,
+    var(--accent--wht--color) 695px
+  );
+  padding: 0px 0px;
+  @include mq(tab) {
+    max-width: 768px;
+    background: linear-gradient(
+      to bottom,
+      var(--background-color) 350px,
+      var(--accent--wht--color) 340px,
+      var(--accent--wht--color) 481px
+    );
+  }
+  @include mq(desk) {
+    max-width: 1680px;
+    background-image: url(../images/campfire.svg),
+      linear-gradient(
+        to bottom,
+        var(--background-color) 545px,
+        var(--accent--wht--color) 530px,
+        var(--accent--wht--color) 710px
+      );
+    background-position: 100% 45%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.problems__title {
+  color: var(--accent--wht--color);
+  padding-top: 25px;
+  @include text(800, 24px, 1.29, 0.03em, left, none);
+  @include mq(tab) {
+    padding-top: 55px;
+    width: 450px;
+  }
+  @include mq(desk) {
+    padding-top: 100px;
+    width: 805px;
+    font-size: 46px;
+  }
+}
+.problems__accent-text {
+  color: var(--accent--color);
+}
+.problems__list {
+  margin-top: 25px;
+  padding: 20px 27px;
+  max-width: 440px;
+  height: 490px;
+  background: var(--accent--wht--color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 688px;
+    max-height: 320px;
+    margin-top: 30px;
+    padding: 28px 90px;
+  }
+  @include mq(desk) {
+    max-width: 1314px;
+    margin-top: 68px;
+    max-height: 335px;
+    padding: 67px 113px;
+  }
+}
+.problems__text {
+  @include text(700, 14px, 1.71, 0.08em, none, none);
+  @include mq(desk) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+.problems__item {
+  counter-increment: section;
+  margin-bottom: 15px;
+  @include mq(tab) {
+    flex-basis: calc(50% - 34px);
+    margin-bottom: 20px;
+  }
+  @include mq(desk) {
+    flex-basis: calc(33.3333% - 26.6667px);
+    margin-bottom: 30px;
+  }
+}
+
+.problems__text::before {
+  content: '― 0' counter(section);
+  display: block;
+  margin-bottom: 5px;
+  @include text(700, 20px, 1.2, 0.08em, none, none);
+  color: var(--accent--color);
+  @include mq(desk) {
+    margin-bottom: 10px;
+  }
+}
+.problems__text-hiden {
+  color: var(--primary-text-color);
+  @include mq(desk) {
+    display: none;
+  }
+}

@@ -2,21 +2,25 @@
 @import './utils/varialbles';
 @import './utils/common';
 @import './utils/mixin';
+@import './utils/visuali_hidden';
 /* base */
 @import './base/reset';
 @import './base/body';
 /* components */
 @import './components/sections';
-@import './components/container.scss';
+@import './components/container';
 @import './components/button';
+@import './components/logo';
+@import './components/logo-footer';
+@import './components/link';
 /* layout */
 @import './layouts/header';
 @import './layouts/hero';
-@import './layouts/advantages';
+@import './layouts/benefits';
 @import './layouts/problems';
 @import './layouts/work';
 @import './layouts/program';
-@import './layouts/benefits';
+@import './layouts/features';
 @import './layouts/about';
 @import './layouts/guarantee';
 @import './layouts/reviews';

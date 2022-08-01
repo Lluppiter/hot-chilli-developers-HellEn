@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hell-En</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/svgorig/favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/svgorig/favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/svgorig/favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="./images/svgorig/favicon_package_v0.16/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="./images/svgorig/favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,23 +41,35 @@
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body class="body">
+  <body class="body" id="page">
     <include src="./partials/header.html"></include>
 
     <main>
       <include src="./partials/hero.html"></include>
-      <include src="./partials/advantages.html"></include>
+      <include src="./partials/benefits.html"></include>
       <include src="./partials/problems.html"></include>
       <include src="./partials/work.html"></include>
       <include src="./partials/program.html"></include>
-      <include src="./partials/benefits.html"></include>
+      <include src="./partials/features.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/guarantee.html"></include>
       <include src="./partials/reviews.html"></include>
       <include src="./partials/contacts.html"></include>
-      <include src="./partials/modal.html"></include>
     </main>
 
     <include src="./partials/footer.html"></include>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script> -->
+    <!-- <script type="module" src="./js/slick.min.js"></script> -->
+    <script src="./js/slider.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/menu.js"></script>
   </body>
 </html>
