@@ -1,28 +1,28 @@
 .hero {
-  padding-bottom: 232px;
+  padding-bottom: 302px;
 
   background-image: url(../images/hero/Group-mob@2x.png),
     url(../images/hero/wave-bg.svg);
-  background-position: 50% bottom, 0px -35px;
+  background-position: left 50% bottom 70px, 0px -35px;
   background-repeat: no-repeat;
   background-size: 208px 178px, 768px 500px;
 
   @include mq(tab) {
-    padding-bottom: 73px;
+    padding-bottom: 140px;
 
     background-image: url(../images/hero/Group-tab@2x.png),
       url(../images/hero/wave-bg.svg);
-    background-position: calc(50% + 198px) top, left -380px;
+    background-position: calc(50% + 198px) top, left -320px;
     background-size: 370px 315px, 1300px 713px;
   }
 
   @include mq(desk) {
     padding-top: 55px;
-    padding-bottom: 272px;
+    padding-bottom: 372px;
 
     background-image: url(../images/hero/Group-desk@2x.png),
       url(../images/hero/wave-bg.svg);
-    background-position: calc(50% + 330px) top, 50% -160px;
+    background-position: calc(50% + 330px) top, 50% -95px;
     background-size: 842px 718px, 1680px 878px;
   }
 }
