@@ -82,6 +82,9 @@
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 10px;
+  @include mq(desk) {
+    font-size: 20px;
+  }
 }
 
 .features__text {
