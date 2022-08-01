@@ -1,16 +1,10 @@
 .section__work {
   @include mq(mob-only) {
-    padding-top: 70px;
+    padding-top: 35px;
     padding-bottom: 40px;
   }
-  @include mq(tab) {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  @include mq(desk) {
-    padding: 130px 0;
-  }
 }
+
 .work {
   flex-wrap: wrap;
   gap: 15px;
@@ -105,13 +99,12 @@
   padding: 30px 20px;
   max-width: 440px;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-
+  transition: color var(--duration-animation),
+    background-color var(--duration-animation), border var(--duration-animation);
   @include mq(mob) {
-    &:hover,
-    &:focus {
-      background-color: var(--accent--color);
-    }
+    max-width: 440px;
   }
+
   @include mq(tab) {
     flex-basis: calc(50% - 10px);
     padding: 35px 32px;
@@ -128,6 +121,9 @@
   &:hover,
   &:focus {
     background-color: var(--accent--color);
+    transition: color var(--duration-animation),
+      background-color var(--duration-animation),
+      border var(--duration-animation);
   }
 }
 .work__box {
