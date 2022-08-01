@@ -1,93 +1,181 @@
-.header__container{
-  width: 1366px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
 
+#page.no-scroll {
+  overflow: hidden;
 }
 
-.flexbox{
+.header__container{
+  position: relative;
+  z-index: 1;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+//   background-color: var(--accent--wht--color);
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+//   top: auto;
+//   left: 50%;
+//   transform: translate(-50%);
 }
 
-.header__item{
-  &:not(:last-child) {
-  margin-right: 40px;
-}
-  // &:first-child {
-  //   // padding-left: 144px;
-  // }
-}
 
-.header__logo {
-  font-size: 26px;
-  font-weight: 800;
-  line-height: calc(31.7/26);
-  text-transform: capitalize;
-  text-decoration: none;
-  color:var(--primary-text-color);
-  letter-spacing: 0.04em;
-  &--text,
-  &--span {
-    font-size: 8px;
-    font-weight: 700;
-    line-height: calc(9.75/8);
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
+
+.mobile-menu {
+  width: 100%;
+  height: 100vh;
+  background: var(--background-color);
+  opacity: 0.8;
+  visibility: hidden;
+
+  padding: 30px 20px;
+
+  display: none;
+  //  transform: translateX(0);
+//   flex-direction: column;
+//   transition: transform .25s;
+  &.is-open {
+    z-index: 3;
+    visibility: visible;
+    position: absolute;
+      top: 0;
+    right: 0;
+    flex-direction: column;
+    row-gap: 48.5px;
+    display: flex;
+    // transform: translateX(100%);
+
   }
-  &--span {
-    color:var(--accent--color)
-  }
-  &--b {
-    text-transform: uppercase;
-  }
+// @media screen and (min-width: 768px) {
+//   margin-left: auto;
+//   margin-right: auto;
 
-}
-
-.header__icon {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.header__link{
-padding-top: 57px;
-padding-bottom: 56px;
-font-size: 14px;
-line-height: calc(17.07/14);
-font-weight: 700;
-text-transform: uppercase;
-color: var(--second-text-color);
-text-decoration: none;
-
-&:hover,
-&:focus {
-  color: var(--accent--color);
-}
-
-}
-
-.header__button{
-  //
-  padding: 0px;
-  // margin-top: 30px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: calc(17.07/14);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent--color);
-&:hover,
-&:focus {
-  background-color: var(--accent--color);
-  color: var(--accent--wht--color);
-}
-}
-
-
-// .header__nav {
-//   margin-left: 144px;
 // }
+
+  @media screen and (min-width: 1366px) {
+    display: flex;
+    visibility: visible;
+    margin-left: 144px;
+    // z-index: 2;
+    // // flex-direction: row;
+    // top: 10px;
+    // left: 297px;
+    // right: auto;
+
+    // transform: translateX(0);
+    width: auto;
+    height: auto;
+    background-color: transparent;
+
+    @include mq(desk) {
+      .logo--header{
+        display: none;
+      }
+      .menu__list {
+        display: flex;
+      }
+
+      .menu__item {
+        &:not(:last-child){
+          margin-right: 40px;
+        }
+      }
+    }
+}
+}
+
+
+
+
+.menu__link {
+font-weight: 800;
+font-size: 20px;
+line-height: calc(36/20);
+letter-spacing: 0.03em;
+text-transform: capitalize;
+color: var(--accent--wht--color);
+
+  @include mq(tab) {
+  font-size: 26px;
+  line-height: calc(46.8/26);
+
+}
+
+@include mq(desk) {
+  display: flex;
+  color: var(--second-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+// &:not(:last-child){
+//   margin-right: 40px;
+// }
+}
+
+&:hover,
+&:focus {
+  color: var(--accent--color);
+}
+}
+
+.menu-button {
+  position: absolute;
+  z-index: 4;
+  top: 25px;
+  right: 15px;
+
+  cursor: pointer;
+
+  background-color: rgba(0,0,0,0);
+  border: none;
+
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 1366px) {
+    display: none;
+}
+}
+
+
+
+.menu-button__close {
+  display: none;
+
+  .menu-button.is-open & {
+  fill: var(--accent--wht--color);
+  display: block;
+}
+}
+
+// .menu-button__open {
+//   display: block;
+//     .menu-button.is-open & {
+//       display: none;
+//     }
+// }
+
+
+
+
+
+// .flexbox{
+//   display: flex;
+//   align-items: center;
+//   // justify-content: space-between;
+// }
+
+// .header__item{
+//   &:not(:last-child) {
+//   margin-right: 40px;
+// }
+// }
+
+// .header__icon {
+//   margin-left: 4px;
+//   margin-right: 4px;
+// }
+

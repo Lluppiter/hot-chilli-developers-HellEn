@@ -1,6 +1,6 @@
 .about .section__title {
   margin-bottom: 30px;
-  @include text(800, 20px, 1.3, 0.03em, false, false);
+  @include text(800, 20px, 1.3, 0.03em, left, false);
   @include mq(tab) {
     font-size: 26px;
   }
@@ -11,6 +11,7 @@
 }
 .about {
   position: relative;
+  padding-bottom: 0;
 }
 .about__wrap {
   @include mq(tab) {
@@ -25,6 +26,14 @@
   display: block;
 
   margin-bottom: 20px;
+
+  width: 243px;
+  height: 306px;
+  @include mq(desk) {
+    width: 530px;
+    height: 668px;
+    margin-bottom: 0;
+  }
 }
 .about__exp {
   max-width: 280px;
@@ -61,10 +70,10 @@
   margin-left: 27px;
   @include text(600, 14px, 1.2, 0.06em, false, false);
   @include mq(tab) {
-    @include text(false, 12px, 1.25, 0.06em, false, false);
+    @include text(600, 12px, 1.25, 0.06em, false, false);
   }
   @include mq(desk) {
-    @include text(false, 16px, false, false, false, false);
+    @include text(600, 16px, 1.25, 0.06em, false, false);
     margin-left: 59px;
   }
 
@@ -104,9 +113,9 @@
     &:not(:last-of-type) {
       margin-bottom: 15px;
     }
-    @include mq(desk) {
-      @include text(500, 18px, 1.56, false, false, false);
-    }
+  }
+  @include mq(desk) {
+    @include text(500, 18px, 1.56, false, false, false);
   }
 
   &:first-of-type::before {

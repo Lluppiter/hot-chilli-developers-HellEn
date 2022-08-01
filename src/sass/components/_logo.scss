@@ -23,4 +23,11 @@
       color: var(--accent--color);
     }
   }
+  &--header{
+    color: var(--accent--wht--color);
+  }
+
+  // @media screen and (min-width: 768px) {
+// лого топ должен пропадать
+  // }
 }
