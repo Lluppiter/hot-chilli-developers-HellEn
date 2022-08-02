@@ -62,18 +62,17 @@
     }
   }
 
-    &--mobile {
+    &--mobile  {
+
       background-color: transparent;
       color: var(--accent--color);
-      display: none;
-
       @include mq(mob-only) {
-          .mobile-menu.is-open + & {
+          // .mobile-menu.is-open + & {
             display: block;
             left: 50%;
             transform: translate(-50%);
           }
-        }
+
     }
 
 
