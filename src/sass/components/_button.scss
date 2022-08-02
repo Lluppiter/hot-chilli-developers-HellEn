@@ -63,12 +63,9 @@
   }
 
     &--mobile  {
-
       background-color: transparent;
       color: var(--accent--color);
       @include mq(mob-only) {
-          // .mobile-menu.is-open + & {
-            display: block;
             margin: 0 auto;
           }
 
