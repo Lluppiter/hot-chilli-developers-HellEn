@@ -55,18 +55,21 @@
       position: relative;
       right: inherit;
       top: inherit;
+      // right: 25px;
+      // top: 0px;
       transform: inherit;
       margin-left: auto;
     }
   }
 
     &--mobile  {
+
       background-color: transparent;
       color: var(--accent--color);
       @include mq(mob-only) {
+          // .mobile-menu.is-open + & {
             display: block;
-            left: 50%;
-            transform: translate(-50%);
+            margin: 0 auto;
           }
 
     }
