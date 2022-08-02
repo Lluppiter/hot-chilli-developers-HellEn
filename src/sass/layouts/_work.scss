@@ -3,6 +3,10 @@
     padding-top: 35px;
     padding-bottom: 40px;
   }
+  @include mq(desk) {
+    padding-top: 65px;
+    padding-bottom: 130px;
+  }
 }
 
 .work {
