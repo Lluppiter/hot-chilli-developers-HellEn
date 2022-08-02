@@ -86,15 +86,27 @@
 
   // border-radius: 5px;
   position: fixed;
-  right: 28px;
-  bottom: 40px;
+  right: 3px;
+  bottom: 20px;
   border: 2px solid var(--accent--color);
   border-radius: 50%;
 
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
+  @include mq(desk) {
+    right: 38px;
+    bottom: 40px;
+  }
 }
 .arrow__icon {
   display: block;
+  width: 30px;
+  height: 30px;
   fill: var(--accent--color);
+
+  @include mq(desk) {
+    width: 60px;
+    height: 60px;
+  }
 }
