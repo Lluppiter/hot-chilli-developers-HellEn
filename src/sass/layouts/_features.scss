@@ -1,5 +1,5 @@
 .features {
-  position: static;
+  position: relative;
   @include mq(tab) {
     padding-top: 35px;
     position: relative;
@@ -9,7 +9,12 @@
     margin-bottom: 0;
     padding-bottom: 100px;
   }
-  background: linear-gradient(to bottom, var(--background-color) 50%, var(--accent--wht--color) 50%, var(--accent--wht--color) 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--background-color) 50%,
+    var(--accent--wht--color) 50%,
+    var(--accent--wht--color) 100%
+  );
   @include mq(desk) {
     background: none;
   }
