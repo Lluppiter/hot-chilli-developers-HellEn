@@ -140,9 +140,6 @@ color: var(--accent--wht--color);
   padding: 0;
   margin-left: auto;
 
-  @include mq(mob-only) {
-    max-width: 22px;
-  }
 
 // desk-top size X-button
   @media screen and (min-width: 1366px) {

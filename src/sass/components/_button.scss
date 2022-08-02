@@ -60,6 +60,9 @@
       @include mq(desk) {
         display: none;
     }
+      @include mq(tab) {
+        display: none;
+  }
   }
 
 
