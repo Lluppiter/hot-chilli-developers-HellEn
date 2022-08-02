@@ -18,7 +18,7 @@
     fill: var(--accent--color);
     @include mq(mob-only) {
       max-width: 80px;
-      max-height: 30px
+      max-height: 30px;
     }
   }
   &__text {
@@ -28,11 +28,9 @@
       color: var(--accent--color);
     }
   }
+
   &--header{
     color: var(--accent--wht--color);
   }
 
-  // @media screen and (min-width: 768px) {
-// лого топ должен пропадать
-  // }
 }
