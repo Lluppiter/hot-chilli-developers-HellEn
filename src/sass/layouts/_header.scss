@@ -15,9 +15,6 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-//   top: auto;
-//   left: 50%;
-
 }
 
 
@@ -130,7 +127,6 @@ color: var(--accent--wht--color);
 // button X !!
 
 .menu-button {
-  position: absolute;
   z-index: 4;
   top: 25px;
   right: 15px;
@@ -142,13 +138,16 @@ color: var(--accent--wht--color);
 
   margin: 0;
   padding: 0;
-
+  margin-left: auto;
 
 
 // desk-top size X-button
   @media screen and (min-width: 1366px) {
     display: none;
 }
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+  }
 }
 
 

@@ -33,40 +33,51 @@
     color: var(--accent--color);
     display: none;
 
-    @include mq(mob-only) {
-      .mobile-menu.is-open + & {
-        display: inline-block;
-        position: absolute;
-        z-index: 5;
-        top: 300px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
+    // @include mq(mob-only) {
+    //   .mobile-menu.is-open + & {
+    //     display: block;
+    //     position: absolute;
+    //     align-items: center;
+    //     top: 300px;
+
+    //     z-index: 5;
+
+    //   }
+    // }
+
     @include mq(tab) {
-      display: inline-block;
-      position: absolute;
-      right: 100px;
-      top: 5px;
-      transform: translateY(50%);
+      display: block;
+      margin-left: auto;
     }
+
     @include mq(desk) {
       display: block;
       position: relative;
       right: inherit;
       top: inherit;
-      // right: 25px;
-      // top: 0px;
       transform: inherit;
       margin-left: auto;
     }
+  }
+
+    &--mobile  {
+      background-color: transparent;
+      color: var(--accent--color);
+      @include mq(mob-only) {
+            display: block;
+            left: 50%;
+            transform: translate(-50%);
+          }
+
+    }
+
 
     &:hover,
     &:focus {
       background-color: var(--accent--color);
       color: var(--accent--wht--color);
     }
-  }
+
 
   &--hero {
     display: block;
@@ -80,21 +91,34 @@
   }
 }
 
+
 .arrow {
   opacity: 0;
   background-color: transparent;
 
   // border-radius: 5px;
   position: fixed;
-  right: 28px;
-  bottom: 40px;
+  right: 3px;
+  bottom: 20px;
   border: 2px solid var(--accent--color);
   border-radius: 50%;
 
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
+  @include mq(desk) {
+    right: 38px;
+    bottom: 40px;
+  }
 }
 .arrow__icon {
   display: block;
+  width: 30px;
+  height: 30px;
   fill: var(--accent--color);
+
+  @include mq(desk) {
+    width: 60px;
+    height: 60px;
+  }
 }
