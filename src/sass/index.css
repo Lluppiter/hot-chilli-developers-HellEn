@@ -165,13 +165,6 @@ body[data-aos-duration="4000"] [data-aos],
   color: var(--accent--color);
   display: none;
 }
-@media screen and (max-width: 767.98px) {
-  .mobile-menu.is-open + .button--header {
-    display: block;
-    align-items: center;
-    z-index: 5;
-  }
-}
 @media screen and (min-width: 768px) {
   .button--header {
     display: block;
@@ -188,7 +181,19 @@ body[data-aos-duration="4000"] [data-aos],
     margin-left: auto;
   }
 }
-.button--header:hover, .button--header:focus {
+.button--mobile {
+  background-color: transparent;
+  color: var(--accent--color);
+  display: none;
+}
+@media screen and (max-width: 767.98px) {
+  .mobile-menu.is-open + .button--mobile {
+    display: block;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+.button:hover, .button:focus {
   background-color: var(--accent--color);
   color: var(--accent--wht--color);
 }
