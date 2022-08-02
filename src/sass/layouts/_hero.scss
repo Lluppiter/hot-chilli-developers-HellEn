@@ -5,8 +5,12 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-image: url(../images/hero/Group-mob@2x.png),
+  background-image: url(../images/hero/Group-mob.png),
     url(../images/hero/wave-bg.svg);
+  @include mq(retina) {
+    background-image: url(../images/hero/Group-mob@2x.png),
+      url(../images/hero/wave-bg.svg);
+  }
   background-position: left 50% bottom 70px, 0px -35px;
   background-repeat: no-repeat;
   background-size: 208px 178px, 768px 500px;
@@ -16,8 +20,12 @@
     padding-top: 30px;
     padding-bottom: 140px;
 
-    background-image: url(../images/hero/Group-tab@2x.png),
+    background-image: url(../images/hero/Group-tab.png),
       url(../images/hero/wave-bg.svg);
+    @include mq(retina) {
+      background-image: url(../images/hero/Group-tab@2x.png),
+        url(../images/hero/wave-bg.svg);
+    }
     background-position: left calc(50% + 198px) top 30px, left -20px top -290px;
     background-size: 370px 315px, 1300px 713px;
   }
@@ -27,11 +35,14 @@
     padding-top: 55px;
     padding-bottom: 372px;
 
-    background-image: url(../images/hero/Group-desk@2x.png),
+    background-image: url(../images/hero/Group-desk.png),
       url(../images/hero/wave-bg.svg);
+    @include mq(retina) {
+      background-image: url(../images/hero/Group-desk@2x.png),
+        url(../images/hero/wave-bg.svg);
+    }
     background-position: calc(50% + 330px) top, left 50% top -130px;
     background-size: 842px 718px, cover;
-    // 1680px 878px
   }
 }
 

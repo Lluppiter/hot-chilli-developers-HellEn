@@ -2,8 +2,13 @@
   padding-top: 50px;
   padding-bottom: 97px;
   color: var(--accent--wht--color);
+
   background-color: var(--background-color);
   background-image: url(../images/programm/program-bg-mob.png);
+  @include mq(retina) {
+    background-image: url(../images/programm/program-bg-mob@2x.png);
+  }
+  background-size: 120px 137px;
   background-repeat: no-repeat;
   background-position: right calc(50% - 100px) bottom;
   border-bottom: 1px solid #111518;
@@ -14,6 +19,10 @@
     padding-bottom: 137px;
 
     background-image: url(../images/programm/program-bg-tab.png);
+    @include mq(retina) {
+      background-image: url(../images/programm/program-bg-tab@2x.png);
+    }
+    background-size: 374px 273px;
     background-repeat: no-repeat;
     background-position: right calc(50% - 195px) bottom 35px;
   }
@@ -23,6 +32,10 @@
     padding-bottom: 340px;
 
     background-image: url(../images/programm/program-bg-desk.png);
+    @include mq(retina) {
+      background-image: url(../images/programm/program-bg-desk@2x.png);
+    }
+    background-size: 672px 502px;
     background-repeat: no-repeat;
     background-position: left calc(50% - 505px) bottom 28px;
   }
