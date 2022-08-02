@@ -6,7 +6,7 @@
   background-image: url(../images/programm/program-bg-mob.png);
   background-repeat: no-repeat;
   background-position: right calc(50% - 100px) bottom;
-
+  border-bottom: 1px solid #111518;
   overflow: hidden;
 
   @include mq(tab) {
