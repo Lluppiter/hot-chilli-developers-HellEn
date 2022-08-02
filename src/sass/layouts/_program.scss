@@ -1,21 +1,21 @@
 .program {
   padding-top: 50px;
-  padding-bottom: 550px;
+  padding-bottom: 97px;
   color: var(--accent--wht--color);
   background-color: var(--background-color);
   background-image: url(../images/programm/program-bg-mob.png);
   background-repeat: no-repeat;
-  background-position: right calc(50% - 100px) bottom 453px;
+  background-position: right calc(50% - 100px) bottom;
 
   overflow: hidden;
 
   @include mq(tab) {
     padding-top: 60px;
-    padding-bottom: 371px;
+    padding-bottom: 137px;
 
     background-image: url(../images/programm/program-bg-tab.png);
     background-repeat: no-repeat;
-    background-position: right calc(50% - 195px) bottom 269px;
+    background-position: right calc(50% - 195px) bottom 35px;
   }
 
   @include mq(desk) {
@@ -37,7 +37,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  transition: transform 250ms linear;
+  transition: transform 400ms linear 100ms;
 
   @include mq(tab) {
     margin-bottom: 52px;
@@ -105,13 +105,16 @@
       height: 3px;
       top: -280px;
       left: -190px;
+      background-color: var(--background-color);
     }
 
-    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: top 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms linear;
   }
 
   .program:hover &::before {
     @include mq(desk) {
+      background-color: var(--accent--wht--color);
       top: -40px;
     }
   }
@@ -150,7 +153,7 @@
       background-color: transparent;
     }
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 400ms;
   }
 
   .program:hover &::before {
@@ -190,7 +193,7 @@
 .semester__subject-item {
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.65;
+  line-height: 1.67;
 
   color: var(--accent--color);
 
