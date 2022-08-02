@@ -18,6 +18,7 @@
     fill: var(--accent--color);
     @include mq(mob-only) {
       max-width: 80px;
+      max-height: 30px
     }
   }
   &__text {
