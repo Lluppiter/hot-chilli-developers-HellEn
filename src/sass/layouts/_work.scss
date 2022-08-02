@@ -45,10 +45,7 @@
   margin-right: auto;
   color: var(--primary-title-color);
   @include text(700, 14px, 1.42, 0.08em, center, false);
-  .work__activity:hover &,
-  .work__activity:focus & {
-    color: var(--accent--wht--color);
-  }
+
   .work__list:hover &,
   .work__list:focus & {
     color: var(--accent--wht--color);
@@ -77,10 +74,7 @@
     line-height: 1.5;
     max-width: 362px;
     height: 138px;
-    .work__activity:hover &,
-    .work__activity:focus & {
-      color: var(--accent--wht--color);
-    }
+
     .work__list:hover &,
     .work__list:focus & {
       color: var(--accent--wht--color);
@@ -99,10 +93,7 @@
   height: 2px;
   background: var(--accent--color);
   border-radius: 2px;
-  .work__activity:hover &,
-  .work__activity:focus & {
-    background: var(--accent--wht--color);
-  }
+
   .work__list:hover &,
   .work__list:focus & {
     background: var(--accent--wht--color);
@@ -148,10 +139,6 @@
   fill: var(--accent--color);
   @include mq(mobile) {
     margin-bottom: 20px;
-  }
-  .work__activity:hover &,
-  .work__activity:focus & {
-    fill: var(--accent--wht--color);
   }
   .work__list:hover &,
   .work__list:focus & {
