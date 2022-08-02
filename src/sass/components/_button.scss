@@ -48,30 +48,27 @@
       transform: inherit;
       margin-left: auto;
     }
-  }
-
-    &--mobile  {
-      background-color: transparent;
-      color: var(--accent--color);
-      @include mq(mob-only) {
-            margin: 0 auto;
-          }
-
-      @include mq(desk) {
-        display: none;
-    }
-      @include mq(tab) {
-        display: none;
-  }
-  }
-
-
     &:hover,
     &:focus {
       background-color: var(--accent--color);
       color: var(--accent--wht--color);
     }
+  }
 
+  &--mobile {
+    background-color: transparent;
+    color: var(--accent--color);
+    @include mq(mob-only) {
+      margin: 0 auto;
+    }
+
+    @include mq(desk) {
+      display: none;
+    }
+    @include mq(tab) {
+      display: none;
+    }
+  }
 
   &--hero {
     display: block;
@@ -84,7 +81,6 @@
     }
   }
 }
-
 
 .arrow {
   opacity: 0;
