@@ -35,20 +35,18 @@
 
     @include mq(mob-only) {
       .mobile-menu.is-open + & {
-        display: inline-block;
-        position: absolute;
+        display: block;
+        align-items: center;
+
         z-index: 5;
-        top: 300px;
-        left: 50%;
-        transform: translateX(-50%);
+
+
       }
     }
+
     @include mq(tab) {
-      display: inline-block;
-      position: absolute;
-      right: 100px;
-      top: 5px;
-      transform: translateY(50%);
+      display: block;
+      margin-left: auto;
     }
     @include mq(desk) {
       display: block;
@@ -66,6 +64,15 @@
       background-color: var(--accent--color);
       color: var(--accent--wht--color);
     }
+
+    // &--mobile {
+    //   display: none;
+    // @include mq(mob-only) {
+    //   display: block;
+    //   background-color: transparent;
+    //   color: var(--accent--color);
+    //   padding-top: 20px;
+    // }
   }
 
   &--hero {
@@ -79,6 +86,7 @@
     }
   }
 }
+
 
 .arrow {
   opacity: 0;
