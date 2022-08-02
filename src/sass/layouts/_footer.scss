@@ -43,6 +43,7 @@
       gap: 30px;
     }
   }
+
   @include mq(tab) {
     justify-content: space-between;
     &__list {
