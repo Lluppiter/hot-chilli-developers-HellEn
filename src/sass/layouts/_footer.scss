@@ -29,6 +29,9 @@
       }
     }
   }
+  &__list {
+    margin: auto;
+  }
 
   @include mq(mob-only) {
     flex-direction: column;
@@ -56,10 +59,11 @@
         border-left: 1px solid #b9b9b9;
       }
     }
+    &__list {
+      margin: 0;
+    }
   }
-  &__list {
-    margin: auto;
-  }
+
   @include mq(desk) {
     &__link--inst {
       &::before {
@@ -68,5 +72,8 @@
         border-left: 1px solid #b9b9b9;
       }
     }
+  }
+  &__list {
+    margin: 0 auto;
   }
 }
