@@ -33,18 +33,6 @@
     color: var(--accent--color);
     display: none;
 
-    // @include mq(mob-only) {
-    //   .mobile-menu.is-open + & {
-    //     display: block;
-    //     position: absolute;
-    //     align-items: center;
-    //     top: 300px;
-
-    //     z-index: 5;
-
-    //   }
-    // }
-
     @include mq(tab) {
       display: block;
       margin-left: auto;
@@ -69,7 +57,10 @@
             margin: 0 auto;
           }
 
+      @include mq(desk) {
+        display: none;
     }
+  }
 
 
     &:hover,
