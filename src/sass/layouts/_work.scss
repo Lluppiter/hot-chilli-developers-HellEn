@@ -43,8 +43,11 @@
   max-width: 440px;
   margin-left: auto;
   margin-right: auto;
+  color: var(--primary-title-color);
   @include text(700, 14px, 1.42, 0.08em, center, false);
-  .work__list:hover & {
+
+  .work__list:hover &,
+  .work__list:focus & {
     color: var(--accent--wht--color);
   }
   @include mq(tab) {
@@ -71,9 +74,11 @@
     line-height: 1.5;
     max-width: 362px;
     height: 138px;
-  }
-  .work__list:hover & {
-    color: var(--accent--wht--color);
+
+    .work__list:hover &,
+    .work__list:focus & {
+      color: var(--accent--wht--color);
+    }
   }
 }
 
@@ -88,19 +93,23 @@
   height: 2px;
   background: var(--accent--color);
   border-radius: 2px;
-  .work__list:hover & {
+
+  .work__list:hover &,
+  .work__list:focus & {
     background: var(--accent--wht--color);
   }
+
   @include mq(desk) {
     margin-bottom: 15px;
   }
 }
+
 .work__list {
   padding: 30px 20px;
   max-width: 440px;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-  transition: color var(--duration-animation),
-    background-color var(--duration-animation), border var(--duration-animation);
+  transition: color var(--duration-animate),
+    background-color var(--duration-animate), border var(--duration-animate);
   @include mq(mob) {
     max-width: 440px;
   }
@@ -121,9 +130,6 @@
   &:hover,
   &:focus {
     background-color: var(--accent--color);
-    transition: color var(--duration-animation),
-      background-color var(--duration-animation),
-      border var(--duration-animation);
   }
 }
 .work__box {
@@ -134,7 +140,8 @@
   @include mq(mobile) {
     margin-bottom: 20px;
   }
-  .work__list:hover & {
+  .work__list:hover &,
+  .work__list:focus & {
     fill: var(--accent--wht--color);
   }
 }
