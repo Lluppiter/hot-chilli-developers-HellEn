@@ -21,21 +21,15 @@
     position: relative;
     padding-top: 100px;
     padding-bottom: 65px;
-    background-image: linear-gradient(
-      to bottom,
-      var(--background-color) 540px,
-      var(--accent--wht--color) 530px,
-      var(--accent--wht--color) 710px
-    );
-
-    &::after {
-      @include mq(desk) {
-        content: url(../images/campfire.svg);
-        position: absolute;
-        top: 9%;
-        right: 0;
-      }
-    }
+    background-image: url(../images/campfire.svg),
+      linear-gradient(
+        to bottom,
+        var(--background-color) 540px,
+        var(--accent--wht--color) 530px,
+        var(--accent--wht--color) 710px
+      );
+    background-position: 100% 25%;
+    background-repeat: no-repeat;
   }
 }
 .problems__title {
