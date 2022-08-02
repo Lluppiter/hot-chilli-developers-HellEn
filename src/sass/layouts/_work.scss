@@ -129,8 +129,8 @@
     min-width: 418px;
     height: 396px;
   }
-  .work__activity:hover &,
-  .work__activity:hover & {
+  &:hover,
+  &:focus {
     background-color: var(--accent--color);
   }
 }
