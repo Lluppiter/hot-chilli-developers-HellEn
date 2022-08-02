@@ -74,12 +74,10 @@
     line-height: 1.5;
     max-width: 362px;
     height: 138px;
-  }
-  .work__list:hover & {
-    color: var(--accent--wht--color);
-  }
-  .work__list:focus & {
-    color: var(--accent--wht--color);
+    .work__list:hover &,
+    .work__list:hover & {
+      color: var(--accent--wht--color);
+    }
   }
 }
 
@@ -94,12 +92,11 @@
   height: 2px;
   background: var(--accent--color);
   border-radius: 2px;
+  .work__list:hover &,
   .work__list:hover & {
     background: var(--accent--wht--color);
   }
-  .work__list:hover & {
-    background: var(--accent--wht--color);
-  }
+
   @include mq(desk) {
     margin-bottom: 15px;
   }
@@ -108,8 +105,8 @@
   padding: 30px 20px;
   max-width: 440px;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-  transition: color var(--duration-animation),
-    background-color var(--duration-animation), border var(--duration-animation);
+  transition: color var(--duration-animate),
+    background-color var(--duration-animate), border var(--duration-animate);
   @include mq(mob) {
     max-width: 440px;
   }
@@ -140,10 +137,8 @@
   @include mq(mobile) {
     margin-bottom: 20px;
   }
+  .work__list:hover &,
   .work__list:hover & {
-    fill: var(--accent--wht--color);
-  }
-  .work__list:focus & {
     fill: var(--accent--wht--color);
   }
 }
